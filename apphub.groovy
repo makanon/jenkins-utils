@@ -189,7 +189,8 @@ class appHub {
 //      
 // ************************************************************************************************
     def Object doHttpRequestWithJson(String userid, String pw, String json, String requestUrl, String verb){ 
-
+	// may want to default header as connection.setRequestProperty("Content-Type", "application/json"); 
+	// -H 'Content-Type: application/json'
         println ("userid: "+ userid)
         println ("pw: "+ pw)
         println ("json: "+json)  
